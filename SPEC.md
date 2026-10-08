@@ -57,7 +57,7 @@ At least three gated portfolio pages must be present. Project 01 is The Space Th
 - Never invent facts, dimensions, dates, or names Santhia has not provided. Ask Santhia when needed.
 - Use the supplied images, drawings, models, and descriptions listed for Projects 01–03. Ask Santhia for any missing project information. A résumé and headshot are still in progress.
 - Put supplied image files in the `images` folder.
-- The homepage hero uses `images/portfolio-hero-collage.webp`, composed only from actual project visuals: a Space Thicket rendering, floor plan, and model photograph; a Jutaku House section; and a Hialeah masterplan diagram. Do not add generated architecture or labels.
+- The homepage hero and login page use `images/portfolio-hero-collage.webp`, composed only from actual project visuals: a Space Thicket rendering, floor plan, and model photograph; a Jutaku House section; and a Hialeah masterplan diagram. Keep it uncropped on login. Do not add generated architecture or labels.
 - Where a needed image is not available, use a plain grey box labelled `[ADD: image of ...]`. Replace the description in that label with the subject needed; do not use a fabricated image.
 - Every image must have meaningful alt text.
 

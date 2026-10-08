@@ -32,7 +32,7 @@ Use free Google Fonts only:
 - Use purposeful, expressive image transitions and scroll reveals that respond quickly. Avoid slow animations and respect reduced-motion preferences.
 
 ## Log-in page, menu, and buttons
-- `login.html` is the front door: a quiet welcome, one strong architectural image, and a clear sign-in form with an equally clear way to create an account.
+- `login.html` is the front door: a quiet welcome, the same architectural collage used on the home page, and a clear sign-in form with an equally clear way to create an account. Keep the collage uncropped so its drawings and model remain visible.
 - Keep the form legible over a calm ivory and blue layout. Do not obscure its controls with imagery or motion.
 - Use a simple menu that links to Home, Projects, About / CV, and Contact.
 - Style buttons with deep blue and ivory, clear labels, visible focus states, and generous tap areas. Include a Log out control on every gated page.
