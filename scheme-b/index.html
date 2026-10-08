@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santhia’s Portfolio — Studio Index</title>
+  <meta name="description" content="A portfolio of architectural work by Santhia.">
+  <meta property="og:title" content="Santhia’s Portfolio">
+  <meta property="og:description" content="A portfolio of architectural work by Santhia.">
+  <meta property="og:image" content="share-card.svg">
+  <meta name="theme-color" content="#16587B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body id="top" data-auth-required="true" data-login-url="../login.html">
+  <header class="site-header"><a class="wordmark" href="#top">SANTHIA <span>/ PORTFOLIO</span></a><nav aria-label="Main navigation"><a href="#top">Home</a><a href="#projects">Projects</a><a href="#about">About / CV</a><a href="#contact">Contact</a><button class="logout-button" data-logout type="button">Log out</button></nav></header>
+  <main data-protected-content hidden>
+    <section class="intro" aria-labelledby="page-title"><div class="intro-title"><p class="eyebrow">Architecture portfolio</p><h1 id="page-title">Selected<br>architectural work.</h1></div><div class="intro-side"><p>A portfolio of architectural work by Santhia.</p><div class="status"><span class="status-dot" aria-hidden="true"></span><span>Portfolio overview</span></div></div></section>
+    <section class="projects" id="projects" aria-labelledby="projects-title"><div class="projects-heading"><p class="eyebrow">01 — Index</p><h2 id="projects-title">Projects</h2><p class="index-note">Selected work</p></div>
+      <article class="project"><span class="number">01</span><div class="project-info"><h3>[ADD: project title]</h3><p>[ADD: project description]</p></div><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 01">[ADD: image of project 01]</div><span class="project-arrow" aria-hidden="true">↗</span></article>
+      <article class="project"><span class="number">02</span><div class="project-info"><h3>[ADD: project title]</h3><p>[ADD: project description]</p></div><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 02">[ADD: image of project 02]</div><span class="project-arrow" aria-hidden="true">↗</span></article>
+      <article class="project"><span class="number">03</span><div class="project-info"><h3>[ADD: project title]</h3><p>[ADD: project description]</p></div><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 03">[ADD: image of project 03]</div><span class="project-arrow" aria-hidden="true">↗</span></article>
+    </section>
+    <section class="about" id="about"><div><p class="eyebrow">02 — Profile</p><h2>About / CV</h2></div><p>[ADD: short introduction and résumé / CV]</p></section>
+    <footer id="contact"><div><p class="eyebrow">03 — Contact</p><h2>Contact</h2></div><p class="contact-link">[ADD: contact details]</p><p class="footer-note">Santhia’s Portfolio</p></footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="../supabase-config.js"></script><script src="../auth.js"></script>
+</body>
+</html>

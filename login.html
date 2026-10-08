@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in — Santhia’s Portfolio</title>
+  <meta name="description" content="Log in or create an account to view Santhia’s architecture portfolio.">
+  <meta property="og:title" content="Santhia’s Portfolio — Log in">
+  <meta property="og:description" content="Log in or create an account to view Santhia’s architecture portfolio.">
+  <meta property="og:image" content="scheme-c/share-card.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scheme-c/style.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="login-page">
+  <header class="login-header"><a class="login-brand" href="login.html">Santhia’s Portfolio</a><button class="logout-button" data-logout type="button">Log out</button></header>
+  <main class="login-layout">
+    <section class="login-panel" aria-labelledby="auth-mode-title">
+      <p class="eyebrow">Architecture portfolio</p>
+      <h1 id="auth-mode-title">Log in</h1>
+      <p>Sign in to view Santhia’s portfolio, or create an account.</p>
+      <div class="auth-mode-switch" role="group" aria-label="Account action">
+        <button type="button" data-auth-mode="login" aria-pressed="true">Log in</button>
+        <button type="button" data-auth-mode="signup" aria-pressed="false">Create account</button>
+      </div>
+      <form class="auth-form" id="auth-form">
+        <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" minlength="6" required></label>
+        <button class="auth-submit" id="auth-submit" type="submit">Log in</button>
+      </form>
+      <p class="auth-status" id="auth-status" role="status" aria-live="polite"></p>
+    </section>
+    <div class="login-image" role="img" aria-label="Placeholder for an architectural image">[ADD: image of an architectural project]</div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
