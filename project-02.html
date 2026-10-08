@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 02 — Santhia’s Portfolio</title>
+  <meta name="description" content="Project 02 in Santhia’s architecture portfolio.">
+  <meta property="og:title" content="Project 02 — Santhia’s Portfolio">
+  <meta property="og:description" content="Project 02 in Santhia’s architecture portfolio.">
+  <meta property="og:image" content="scheme-c/share-card.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scheme-c/style.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body data-auth-required="true">
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Santhia <span>— Portfolio</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About / CV</a>
+      <a href="contact.html">Contact</a>
+      <button class="logout-button" data-logout type="button">Log out</button>
+    </nav>
+  </header>
+  <main class="subpage project-detail" data-protected-content hidden>
+    <p class="eyebrow"><a href="projects.html">Projects</a> / Project 02</p>
+    <h1>[ADD: project title]</h1>
+    <div class="placeholder project-detail-image" role="img" aria-label="Placeholder image for project 02">[ADD: image of project 02]</div>
+    <section aria-labelledby="project-description-heading">
+      <h2 id="project-description-heading">Project 02</h2>
+      <p>[ADD: project description]</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
