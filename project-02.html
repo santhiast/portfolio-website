@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project 02 — Santhia’s Portfolio</title>
-  <meta name="description" content="Project 02 in Santhia’s architecture portfolio.">
-  <meta property="og:title" content="Project 02 — Santhia’s Portfolio">
-  <meta property="og:description" content="Project 02 in Santhia’s architecture portfolio.">
-  <meta property="og:image" content="scheme-c/share-card.svg">
+  <title>Jutaku House — Santhia’s Portfolio</title>
+  <meta name="description" content="Jutaku House, a compact artist’s home designed by Santhia St. Fleur for ARC 101: Design I at the University of Miami School of Architecture.">
+  <meta property="og:title" content="Jutaku House — Santhia’s Portfolio">
+  <meta property="og:description" content="A compact artist’s home balancing Japanese architectural influence, modern elements, and efficient spatial organization.">
+  <meta property="og:image" content="images/jutaku-model-context.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scheme-c/style.css">
   <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="project-02.css">
 </head>
 <body data-auth-required="true">
   <header class="site-header">
@@ -25,14 +26,33 @@
       <button class="logout-button" data-logout type="button">Log out</button>
     </nav>
   </header>
-  <main class="subpage project-detail" data-protected-content hidden>
-    <p class="eyebrow"><a href="projects.html">Projects</a> / Project 02</p>
-    <h1>[ADD: project title]</h1>
-    <div class="placeholder project-detail-image" role="img" aria-label="Placeholder image for project 02">[ADD: image of project 02]</div>
-    <section aria-labelledby="project-description-heading">
-      <h2 id="project-description-heading">Project 02</h2>
-      <p>[ADD: project description]</p>
+  <main class="subpage project-detail jutaku-house" data-protected-content hidden>
+    <header class="jutaku-house-heading">
+      <p class="eyebrow"><a href="projects.html">Projects</a> / Project 02 · ARC 101: Design I</p>
+      <h1>Jutaku House</h1>
+      <p class="jutaku-house-deck">A compact artist’s home balancing Japanese architectural influence, modern elements, and efficient spatial organization.</p>
+    </header>
+    <figure class="jutaku-house-hero"><img src="images/jutaku-location-plan.webp" alt="Location plan showing the narrow house site within its surrounding parcels and trees"><figcaption>Location plan</figcaption></figure>
+    <section class="jutaku-house-overview" aria-label="Project information">
+      <dl class="jutaku-house-meta">        <div><dt>Student</dt><dd>Santhia St. Fleur</dd></div>
+        <div><dt>University</dt><dd>University of Miami School of Architecture</dd></div>
+        <div><dt>Course</dt><dd>ARC 101: Design I</dd></div>
+        <div><dt>Term</dt><dd>Fall 2025</dd></div>
+        <div><dt>Faculty</dt><dd>Andrew Clum</dd></div>
+        <div><dt>Project type</dt><dd>Compact artist’s home</dd></div>
+        <div><dt>Dimensions</dt><dd>16 ft × 48 ft</dd></div>
+        <div><dt>Setbacks</dt><dd>2 ft lateral; 2 ft front and back</dd></div>
+      </dl>
+      <div class="jutaku-house-copy"><p>Jutaku House explores the simplicity and elegance of traditional Japanese architecture while incorporating modern elements. Minimalist forms, natural materials, and efficient spatial organization shape a functional, expressive home for an artist.</p><p>The project considers how compact living can still feel open, peaceful, and connected to its surroundings.</p></div>
     </section>
+    <section class="jutaku-house-gallery" aria-label="Project drawings and visuals">
+      <figure><img src="images/jutaku-floor-and-roof-plans.webp" alt="First-, second-, and third-floor plans with the roof plan"><figcaption>Floor and roof plans</figcaption></figure>
+      <figure><img src="images/jutaku-elevations.webp" alt="Front, back, left, and right side elevations of the Jutaku House"><figcaption>Elevations</figcaption></figure>
+      <figure><img src="images/jutaku-sections.webp" alt="Section drawings through the Jutaku House"><figcaption>Sections</figcaption></figure>
+      <figure><img src="images/jutaku-model-views.webp" alt="Three views of the Jutaku House physical study model against a dark background"><figcaption>Physical model views</figcaption></figure>
+      <figure><img src="images/jutaku-model-context.webp" alt="Close and overhead views of the Jutaku House model among surrounding model buildings"><figcaption>Model in context</figcaption></figure>
+    </section>
+    <a class="jutaku-house-back" href="projects.html">← Back to Projects</a>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>

@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project 01 — Santhia’s Portfolio</title>
-  <meta name="description" content="Project 01 in Santhia’s architecture portfolio.">
-  <meta property="og:title" content="Project 01 — Santhia’s Portfolio">
-  <meta property="og:description" content="Project 01 in Santhia’s architecture portfolio.">
-  <meta property="og:image" content="scheme-c/share-card.svg">
+  <title>The Space Thicket — Santhia’s Portfolio</title>
+  <meta name="description" content="The Space Thicket, a project by Santhia St. Fleur for Elements of Architecture / ARC102 Spring at the University of Miami.">
+  <meta property="og:title" content="The Space Thicket — Santhia’s Portfolio">
+  <meta property="og:description" content="A spatial study shaped by density, hierarchy, and relationships.">
+  <meta property="og:image" content="images/space-thicket-exterior.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scheme-c/style.css">
   <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="project-01.css">
 </head>
 <body data-auth-required="true">
   <header class="site-header">
@@ -25,14 +26,35 @@
       <button class="logout-button" data-logout type="button">Log out</button>
     </nav>
   </header>
-  <main class="subpage project-detail" data-protected-content hidden>
-    <p class="eyebrow"><a href="projects.html">Projects</a> / Project 01</p>
-    <h1>[ADD: project title]</h1>
-    <div class="placeholder project-detail-image" role="img" aria-label="Placeholder image for project 01">[ADD: image of project 01]</div>
-    <section aria-labelledby="project-description-heading">
-      <h2 id="project-description-heading">Project 01</h2>
-      <p>[ADD: project description]</p>
+  <main class="subpage project-detail space-thicket" data-protected-content hidden>
+    <header class="space-thicket-heading">
+      <p class="eyebrow"><a href="projects.html">Projects</a> / Project 01 · Elements of Architecture</p>
+      <h1>The Space Thicket</h1>
+      <p class="space-thicket-deck">A spatial condition shaped by density, hierarchy, and relationships.</p>
+    </header>
+    <figure class="space-thicket-hero">
+      <img src="images/space-thicket-exterior.jpg" alt="Exterior rendering of the project's geometric volumes beneath surrounding trees">
+      <figcaption>Exterior rendering</figcaption>
+    </figure>
+    <section class="space-thicket-overview" aria-label="Project information">
+      <dl class="space-thicket-meta">
+        <div><dt>Student</dt><dd>Santhia St. Fleur</dd></div>
+        <div><dt>University</dt><dd>University of Miami</dd></div>
+        <div><dt>Course</dt><dd>Elements of Architecture / ARC102 Spring</dd></div>
+        <div><dt>Instructor</dt><dd>Mohammad Shanti</dd></div>
+      </dl>
+      <div class="space-thicket-copy">
+        <p>The Space Thicket explores space as a condition shaped by density, hierarchy, and relationships. Closely spaced walls and vertical elements build a layered interior, compressing movement through narrow passages and releasing it into slightly more open zones. Wood reinforces the verticality and warmth of tree trunks.</p>
+        <p>At the site scale, surrounding trees establish the dominant spatial order. The architecture remains secondary and responds through its openings, orientations, and spatial sequences, keeping the landscape primary.</p>
+      </div>
     </section>
+    <section class="space-thicket-gallery" aria-label="Project drawings and visuals">
+      <figure><img src="images/space-thicket-interior.jpg" alt="Interior cutaway rendering showing wood-lined spaces among trees"><figcaption>Interior cutaway rendering</figcaption></figure>
+      <figure><img src="images/space-thicket-model.jpg" alt="Photograph of a white architectural study model arranged as repeated blocks"><figcaption>Study model</figcaption></figure>
+      <figure><img src="images/space-thicket-site-plan.png" alt="Site plan drawing showing the project footprint within surrounding trees"><figcaption>Site plan</figcaption></figure>
+      <figure><img src="images/space-thicket-floor-plan.png" alt="Floor plan drawing of the project's rooms and passages"><figcaption>Floor plan</figcaption></figure>
+    </section>
+    <a class="space-thicket-back" href="projects.html">← Back to Projects</a>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>

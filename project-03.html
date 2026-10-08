@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project 03 — Santhia’s Portfolio</title>
-  <meta name="description" content="Project 03 in Santhia’s architecture portfolio.">
-  <meta property="og:title" content="Project 03 — Santhia’s Portfolio">
-  <meta property="og:description" content="Project 03 in Santhia’s architecture portfolio.">
-  <meta property="og:image" content="scheme-c/share-card.svg">
+  <title>Hialeah Racetrack Masterplan — Santhia’s Portfolio</title>
+  <meta name="description" content="Hialeah Racetrack Masterplan, an urban design project by Santhia St. Fleur for ARC 101: Design I at the University of Miami School of Architecture.">
+  <meta property="og:title" content="Hialeah Racetrack Masterplan — Santhia’s Portfolio">
+  <meta property="og:description" content="A walkable, connected community plan that responds to the history of the Hialeah Racetrack.">
+  <meta property="og:image" content="images/hialeah-masterplan-centria-concept.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scheme-c/style.css">
   <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="project-03.css">
 </head>
 <body data-auth-required="true">
   <header class="site-header">
@@ -25,14 +26,34 @@
       <button class="logout-button" data-logout type="button">Log out</button>
     </nav>
   </header>
-  <main class="subpage project-detail" data-protected-content hidden>
-    <p class="eyebrow"><a href="projects.html">Projects</a> / Project 03</p>
-    <h1>[ADD: project title]</h1>
-    <div class="placeholder project-detail-image" role="img" aria-label="Placeholder image for project 03">[ADD: image of project 03]</div>
-    <section aria-labelledby="project-description-heading">
-      <h2 id="project-description-heading">Project 03</h2>
-      <p>[ADD: project description]</p>
+  <main class="subpage project-detail hialeah-masterplan" data-protected-content hidden>
+    <header class="hialeah-masterplan-heading">
+      <p class="eyebrow"><a href="projects.html">Projects</a> / Project 03 · ARC 101: Design I</p>
+      <h1>Hialeah Racetrack Masterplan</h1>
+      <p class="hialeah-masterplan-deck">A walkable, connected community plan that responds to the history of the Hialeah Racetrack.</p>
+    </header>
+    <figure class="hialeah-masterplan-hero"><img src="images/hialeah-masterplan-overall-plan.webp" alt="Overall Hialeah Racetrack masterplan showing the circular district, surrounding blocks, and central landscape"><figcaption>Overall masterplan</figcaption></figure>
+    <section class="hialeah-masterplan-overview" aria-label="Project information">
+      <dl class="hialeah-masterplan-meta">        <div><dt>Student</dt><dd>Santhia St. Fleur</dd></div>
+        <div><dt>University</dt><dd>University of Miami School of Architecture</dd></div>
+        <div><dt>Course</dt><dd>ARC 101: Design I</dd></div>
+        <div><dt>Term</dt><dd>Fall 2025</dd></div>
+        <div><dt>Faculty</dt><dd>Andrew Clum</dd></div>
+        <div><dt>Project type</dt><dd>Master planning / urban design</dd></div>
+        <div><dt>Site</dt><dd>Hialeah, Florida</dd></div>
+      </dl>
+      <div class="hialeah-masterplan-copy"><p>Hialeah Racetrack Masterplan explores how architecture and urban design can shape daily life at a human scale. The project reimagines the Hialeah Racetrack as a walkable, connected community that responds to the site’s history.</p><p>Its approach considers streets, public spaces, housing, and movement together to support a vibrant neighborhood.</p></div>
     </section>
+    <section class="hialeah-masterplan-gallery" aria-label="Project drawings and visuals">
+      <figure><img src="images/hialeah-masterplan-centria-concept.webp" alt="Centria concept plan for Miami, Florida, credited to Maggie Pan and Santhia St. Fleur"><figcaption>Centria concept plan · Maggie Pan and Santhia St. Fleur</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-park-plan.webp" alt="Plan drawing of the neighborhood blocks and central park landscape"><figcaption>Park and neighborhood plan</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-circulation-plan.webp" alt="Detailed plan of the circular street and public-space network"><figcaption>Central circulation plan</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-perspective.webp" alt="Axonometric perspective of the circular masterplan and surrounding blocks"><figcaption>Masterplan perspective</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-street-studies.webp" alt="Site context map and four street section studies"><figcaption>Site context and street studies</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-analysis-diagrams.webp" alt="Four analysis diagrams showing street and site patterns with selected areas highlighted"><figcaption>Analysis diagrams</figcaption></figure>
+      <figure><img src="images/hialeah-masterplan-zoning-reference.webp" alt="SmartCode zoning reference sheet with frontage-element descriptions and building diagrams"><figcaption>Zoning reference · SmartCode</figcaption></figure>
+    </section>
+    <a class="hialeah-masterplan-back" href="projects.html">← Back to Projects</a>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>

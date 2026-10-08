@@ -11,7 +11,38 @@ Santhia’s Portfolio presents Santhia’s architecture work to architecture fir
 - `about.html`: personal introduction and résumé/CV. Add education, experience, software, and other details only when Santhia supplies them.
 - `contact.html`: contact information and a clear way to get in touch. Add contact details only when Santhia supplies them.
 
-At least three gated portfolio pages must be present. Project titles, descriptions, and other facts are not yet supplied; use clear placeholders until they are.
+At least three gated portfolio pages must be present. Project 01 is The Space Thicket, Project 02 is Jutaku House, and Project 03 is Hialeah Racetrack Masterplan. Use their supplied titles, details, descriptions, and visuals on the home page and their detail pages. Keep placeholders for other projects until their information is supplied.
+
+### Project 01 — The Space Thicket
+- Student: Santhia St. Fleur
+- University: University of Miami
+- Course: Elements of Architecture / ARC102 Spring
+- Instructor: Mohammad Shanti
+- Description: explores a spatial condition shaped by density, hierarchy, and relationships. Closely spaced vertical elements and repeated walls create layered interior conditions, with narrower passages and more open areas. Wood reinforces the vertical/tree-like quality. Surrounding trees remain dominant, and the architecture responds to the landscape through openings, orientations, and spatial sequences.
+- Use the drawings, model photographs, and renderings supplied in images/space-thicket-*, extracted from Santhia’s ARC102 portfolio PDF. Do not invent further project facts.
+
+### Project 02 — Jutaku House
+- Category: residential design; a compact home for an artist.
+- Student: Santhia St. Fleur
+- University: University of Miami School of Architecture
+- Course: ARC 101: Design I
+- Term: Fall 2025
+- Faculty: Andrew Clum
+- Supplied project dimensions: 16 ft × 48 ft; 2 ft lateral setback and 2 ft front and back setbacks.
+- Description: explores traditional Japanese architectural influence alongside modern elements, using minimalist forms, natural materials, and efficient spatial organization for a functional, expressive artist’s home. The project considers how compact living can still feel open, peaceful, and connected to its surroundings.
+- Use all six supplied Jutaku House visual sheets in images/jutaku-*.webp.
+
+### Project 03 — Hialeah Racetrack Masterplan
+- Category: master planning and urban design.
+- Student: Santhia St. Fleur
+- University: University of Miami School of Architecture
+- Course: ARC 101: Design I
+- Term: Fall 2025
+- Faculty: Andrew Clum
+- Site: Hialeah, Florida.
+- Description: explores how architecture and urban design can shape daily life at a human scale by reimagining the Hialeah Racetrack as a walkable, connected community responsive to its history. The work considers streets, public spaces, housing, and movement together.
+- The Centria concept sheet credits Maggie Pan and Santhia St. Fleur.
+- Use all eight supplied project visual sheets in images/hialeah-masterplan-*.webp, including its zoning reference page.
 
 ## Log-in gate
 - Use Supabase authentication for email-and-password sign-up and log-in.
@@ -24,8 +55,9 @@ At least three gated portfolio pages must be present. Project titles, descriptio
 
 ## Content and images
 - Never invent facts, dimensions, dates, or names Santhia has not provided. Ask Santhia when needed.
-- Santhia has some project images, drawings, and models. Renderings, project descriptions, a résumé, and a headshot are still in progress.
+- Use the supplied images, drawings, models, and descriptions listed for Projects 01–03. Ask Santhia for any missing project information. A résumé and headshot are still in progress.
 - Put supplied image files in the `images` folder.
+- The homepage hero uses `images/portfolio-hero-collage.webp`, composed only from actual project visuals: a Space Thicket rendering, floor plan, and model photograph; a Jutaku House section; and a Hialeah masterplan diagram. Do not add generated architecture or labels.
 - Where a needed image is not available, use a plain grey box labelled `[ADD: image of ...]`. Replace the description in that label with the subject needed; do not use a fabricated image.
 - Every image must have meaningful alt text.
 

@@ -67,7 +67,7 @@ Build three independent home page studies in `scheme-a`, `scheme-b`, and `scheme
 
 ### Scheme C — Playful field notes
 - **Attitude:** curious, tactile, and personal while remaining professional; a sketchbook of architecture studies.
-- **Layout:** offset two-column introduction with a small note-style copy block and a large image placeholder, followed by an irregular but deliberate grid of project cards with varied proportions. Add small section markers and a clear final Contact panel.
+- **Layout:** offset two-column introduction with a small note-style copy block and a large collage assembled from Santhia’s supplied drawings, model photographs, and renderings, followed by an irregular but deliberate grid of project cards with varied proportions. Add small section markers and a clear final Contact panel.
 - **Type:** Manrope for expressive, oversized headings; Inter for readable body copy and navigation. Allow a few large, cropped typographic labels as layout elements, never as substitutes for content.
 - **Details:** ivory base with deep-blue text and soft-blue card surfaces, frames, and numbered markers. Use subtle rotation or hover movement only when reduced-motion settings are respected.
 
