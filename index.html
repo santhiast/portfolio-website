@@ -13,22 +13,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="scheme-c/style.css">
   <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-<body id="top" data-auth-required="true">
+<body id="top" class="home-page" data-auth-required="true">
+  <div class="home-scroll-progress" aria-hidden="true"><span></span></div>
   <header class="site-header"><a class="wordmark" href="index.html">Santhia <span>— Portfolio</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About / CV</a><a href="contact.html">Contact</a><button class="logout-button" data-logout type="button">Log out</button></nav></header>
   <main data-protected-content hidden>
-    <section class="intro" aria-labelledby="page-title"><div class="intro-copy"><p class="eyebrow">Architecture / Selected work</p><h1 id="page-title">A portfolio of architectural work.</h1><p>Selected work by Santhia, with background and contact information.</p></div><div class="hero-image placeholder" role="img" aria-label="Placeholder for an introductory architecture image"><span>[ADD: image of an architectural project]</span><b aria-hidden="true">01</b></div><span class="margin-note">FIELD NOTES<br>01 — PORTFOLIO</span></section>
-    <section class="projects" aria-labelledby="projects-title"><div class="section-heading"><p class="eyebrow">A / Selected work</p><h2 id="projects-title">Projects<span aria-hidden="true">.</span></h2></div><div class="project-grid">
-      <article class="project"><a class="project-card-link" href="project-01.html" aria-label="Open Project 01"><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 01"><span>[ADD: image of project 01]</span><b aria-hidden="true">01</b></div><p class="eyebrow">Project 01</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p></a></article>
-      <article class="project project-two"><a class="project-card-link" href="project-02.html" aria-label="Open Project 02"><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 02"><span>[ADD: image of project 02]</span><b aria-hidden="true">02</b></div><p class="eyebrow">Project 02</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p></a></article>
-      <article class="project project-three"><a class="project-card-link" href="project-03.html" aria-label="Open Project 03"><div class="project-image placeholder" role="img" aria-label="Placeholder image for project 03"><span>[ADD: image of project 03]</span><b aria-hidden="true">03</b></div><p class="eyebrow">Project 03</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p></a></article>
-    </div></section>
-    <section class="about"><p class="eyebrow">B / About</p><div><h2>About / CV</h2><p>I am a second-year architecture student at the University of Miami with an interest in sustainability and commercial architecture.</p><p><strong>Education</strong><br>University of Miami · Bachelor of Architecture · Expected graduation: 2028</p><p><strong>Software</strong><br>Rhino · AutoCAD · Revit · Adobe Illustrator · Photoshop · InDesign · Grasshopper</p><p><strong>Interests</strong><br>Sustainability · Commercial Architecture</p></div><span class="about-mark" aria-hidden="true">B</span></section>
+    <section class="intro home-intro" aria-labelledby="page-title">
+      <div class="intro-copy" data-reveal>
+        <p class="eyebrow">Architecture / Selected work</p>
+        <h1 id="page-title">A portfolio of architectural work.</h1>
+        <p>Selected work by Santhia, with background and contact information.</p>
+      </div>
+      <div class="hero-image placeholder home-hero-image" role="img" aria-label="Placeholder for an introductory architecture image" data-reveal>
+        <span>[ADD: image of an architectural project]</span><b aria-hidden="true">01</b>
+      </div>
+      <span class="margin-note">FIELD NOTES<br>01 — PORTFOLIO</span>
+      <a class="home-scroll-cue" href="#projects"><span>Scroll to selected work</span><b aria-hidden="true">↓</b></a>
+    </section>
+    <section class="projects home-projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">A / Selected work</p>
+        <h2 id="projects-title">Projects<span aria-hidden="true">.</span></h2>
+      </div>
+      <div class="project-grid home-project-grid">
+        <article class="project home-project" id="home-project-01" data-reveal style="--reveal-order: 0">
+          <a class="project-card-link home-project-link" href="project-01.html" aria-label="Open Project 01">
+            <div class="project-image placeholder home-project-image" role="img" aria-label="Placeholder image for project 01"><span>[ADD: image of project 01]</span><b aria-hidden="true">01</b></div>
+            <div class="home-project-copy"><p class="eyebrow">Project 01</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p><span class="home-project-open" aria-hidden="true">View project <b>↗</b></span></div>
+          </a>
+          <a class="home-next-cue" href="#home-project-02" aria-label="Continue to Project 02"><span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="project home-project" id="home-project-02" data-reveal style="--reveal-order: 1">
+          <a class="project-card-link home-project-link" href="project-02.html" aria-label="Open Project 02">
+            <div class="project-image placeholder home-project-image" role="img" aria-label="Placeholder image for project 02"><span>[ADD: image of project 02]</span><b aria-hidden="true">02</b></div>
+            <div class="home-project-copy"><p class="eyebrow">Project 02</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p><span class="home-project-open" aria-hidden="true">View project <b>↗</b></span></div>
+          </a>
+          <a class="home-next-cue" href="#home-project-03" aria-label="Continue to Project 03"><span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="project home-project" id="home-project-03" data-reveal style="--reveal-order: 2">
+          <a class="project-card-link home-project-link" href="project-03.html" aria-label="Open Project 03">
+            <div class="project-image placeholder home-project-image" role="img" aria-label="Placeholder image for project 03"><span>[ADD: image of project 03]</span><b aria-hidden="true">03</b></div>
+            <div class="home-project-copy"><p class="eyebrow">Project 03</p><h3>[ADD: project title]</h3><p class="project-description">[ADD: project description]</p><span class="home-project-open" aria-hidden="true">View project <b>↗</b></span></div>
+          </a>
+          <a class="home-next-cue" href="#home-about" aria-label="Continue to About and CV"><span aria-hidden="true">↓</span></a>
+        </article>
+      </div>
+    </section>
+    <section class="about" id="home-about" data-reveal><p class="eyebrow">B / About</p><div><h2>About / CV</h2><p>I am a second-year architecture student at the University of Miami with an interest in sustainability and commercial architecture.</p><p><strong>Education</strong><br>University of Miami · Bachelor of Architecture · Expected graduation: 2028</p><p><strong>Software</strong><br>Rhino · AutoCAD · Revit · Adobe Illustrator · Photoshop · InDesign · Grasshopper</p><p><strong>Interests</strong><br>Sustainability · Commercial Architecture</p></div><span class="about-mark" aria-hidden="true">B</span></section>
   </main>
-  <footer data-protected-content hidden><div><p class="eyebrow">C / Say hello</p><h2>Contact</h2><p><a href="mailto:santhiastfleur2024@gmail.com">santhiastfleur2024@gmail.com</a></p></div><a class="contact-link" href="contact.html">Contact details <span aria-hidden="true">↗</span></a><p class="footer-note">Santhia’s Portfolio · Architecture</p></footer>
+  <footer data-protected-content hidden data-reveal><div><p class="eyebrow">C / Say hello</p><h2>Contact</h2><p><a href="mailto:santhiastfleur2024@gmail.com">santhiastfleur2024@gmail.com</a></p></div><a class="contact-link" href="contact.html">Contact details <span aria-hidden="true">↗</span></a><p class="footer-note">Santhia’s Portfolio · Architecture</p></footer>
   <p class="auth-status" id="auth-status" role="status" aria-live="polite"></p>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase-config.js"></script>
   <script src="auth.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
